@@ -52,7 +52,7 @@ class Search {
                 JSON.stringify(response, null, 2)
             );
             const result = {
-                title: "Search results from Perplexity. Use 'exo query' to discuss with Claude. You could also use 'exo create_note <note_string>' to write a thought down for later",
+                title: "Search results from Perplexity.",
                 content: response.choices[0].message.content,
             };
             console.log("Formatted result from query:", result);

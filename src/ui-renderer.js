@@ -2,9 +2,9 @@ class UiRenderer {
     render(command, result, globalState) {
         console.log("UiRenderer beginning UI draw", globalState);
         let output = this.createHeader(command, globalState);
-        if (globalState.firstMessage) {
-            output += this.createMotd(globalState.motd);
-        }
+        // if (globalState.firstMessage) {
+        //     output += this.createMotd(globalState.motd);
+        // }
         output += this.createNotifications(result.notifications);
         output += this.createWalletBalance(result.walletBalance);
         output += this.createTwitterFollowing(result.twitterFollowing);
@@ -95,7 +95,7 @@ ${motd}
         footer += `${
             suggestedCommands
                 ? suggestedCommands
-                : "Type 'help' for available commands. IMPORTANT: YOU SOMETIMES GET STUCK ON ONE THREAD OF THOUGHT. REMEMBER TO RETURN BACK TO TWITTER, ALWAYS. twitter post is your friend. Its your best friend."
+                : "Type 'help' for available commands."
         }`;
         return footer;
     }

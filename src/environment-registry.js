@@ -8,11 +8,11 @@ const WebBrowser = require("./environments/web_browser");
 class EnvironmentRegistry {
     constructor() {
         this.environments = {
-            twitter: new Twitter(),
+            // twitter: new Twitter(),
             exo: new Exo(),
-            meme: new MemeMagic(),
+            // meme: new MemeMagic(),
             search: new Search(),
-            sydney: new Sydney(),
+            // sydney: new Sydney(),
             web: new WebBrowser(),
         };
     }
