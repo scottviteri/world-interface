@@ -139,3 +139,6 @@ qa/conversation_*
 qa/qa_outputs/
 qa_outputs/
 SCRATCH.md
+
+# Database files
+data/
